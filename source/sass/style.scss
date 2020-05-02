@@ -1,0 +1,50 @@
+$font-head: 'Oswald', 'Arial', sans-serif;
+$font-main: 'Arial', sans-serif;
+$leaf-color: #68b738;
+$text-color: #444444;
+$text-head: #ffffff;
+$program-color: #f2f2f2;
+$top-color: #111111;
+$top-color2: #222222;
+$footer-svg-color: #666666;
+$bgGrey: #eaeaea;
+
+$tablet-width: 768px;
+$dextop-width: 1300px;
+
+@import "_normalize";
+@mixin container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 280px;
+}
+@mixin containerTablet {
+  margin: 0 auto;
+  padding: 0 30px;
+  min-width: 708px;
+}
+
+
+body {
+  min-width: 320px;
+  box-sizing: border-box;
+  font-family: $font-main;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@import "header.scss";
+@import "main-info.scss";
+@import "index-program.scss";
+@import "index-about.scss";
+@import "example.scss";
+@import "catalog.scss";
+@import "additional.scss";
+@import "form.scss";
+@import "map.scss";
+@import "footer.scss";
+
+

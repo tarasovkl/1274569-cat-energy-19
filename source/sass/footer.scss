@@ -1,0 +1,136 @@
+.footer {
+  width: auto;
+  min-height: 236px;
+  margin: 0 auto;
+  background-color: $program-color;
+  text-align: center
+}
+
+.footer__container {
+  min-height: 236px;
+}
+
+.footer__logo {
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 56px;
+}
+.footer__socials {
+  position: relative;
+  height: 19px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  display: flex;
+  width: 126px;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 280px;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.1;
+    top: -22px;
+    left: -77px;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    width: 280px;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.1;
+    top: 40px;
+    left: -77px;
+  }
+  svg {
+    fill: $footer-svg-color
+  }
+  a {
+    display: block;
+  }
+}
+.footer__wrapper {
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg {
+    fill: $footer-svg-color;
+  }
+}
+
+.footer__academy {
+  a {
+  height: 16px;
+  line-height: 16px;
+  color: $text-color;
+  }
+  svg {
+    fill: $footer-svg-color
+  }
+}
+
+
+
+@media (min-width:$tablet-width) {
+  .footer {
+    min-height: 150px;
+  }
+
+  .footer__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+    width: 708px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__logo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__socials {
+    margin: 0;
+    &::before {
+      display: none;
+    }
+    &::after{
+      display: none;
+    }
+  }
+
+  .footer__wrapper {
+    flex-basis: 162px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__academy {
+  }
+
+  .footer__socials-vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .footer__socials-inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .footer__socials-fb {
+    width: 14px;
+    height: 28px;
+  }
+
+}
