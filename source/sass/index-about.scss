@@ -1,0 +1,145 @@
+.about {
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.about__title {
+  margin: 0;
+  color: $top-color;
+  font-family: $font-head;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.about__items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.about__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.about__icon{
+  width: 60px;
+  height: 60px;
+  background-color: $leaf-color;
+  &--image1 {
+    background-image: url('..//img/advantage-leaf@1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &--image2 {
+    background-image: url('..//img/advantage-powder@1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &--image3 {
+    background-image: url('..//img/advantage-dining@1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &--image4 {
+    background-image: url('..//img/advantage-clock@1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.about__text {
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+  max-width: 204px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+.about {
+  @include containerTablet;
+  }
+
+.about__title {
+  font-size: 60px;
+  line-height: 60px;
+  }
+
+.about__items {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 63px;
+  }
+
+.about__item {
+  position: relative;
+  flex-basis: 325px;
+  display: block;
+  min-height: 228px;
+  margin-bottom: 89px;
+  &::before {
+    display: block;
+    content: '1';
+    font-family: $font-head;
+    font-size: 281px;
+    line-height: 281px;
+    position: absolute;
+    left: 119px;
+    top: -37px;
+    color: $program-color;
+    z-index: -1;
+  }
+  }
+
+.about__icon {
+  width: 80px;
+  height: 80px;
+  }
+
+.about__text {
+  margin-top: 37px;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 245px;
+  }
+
+.about__item--bg2 {
+  &::before {
+    content: '2';
+    left: 114px;
+    }
+  }
+  .about__item--bg3 {
+    &::before {
+      content: '3';
+      left: 110px;
+      }
+    }
+  .about__item--bg4 {
+    &::before {
+      display: block;
+      content: '4';
+      left: 114px;
+      }
+    }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    @include containerDesktop;
+    margin-top: 49px;
+  }
+
+  .about__item {
+    flex-basis: 250px;
+  }
+}
