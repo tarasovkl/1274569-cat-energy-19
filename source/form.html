@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -78,92 +79,92 @@
       <button class="header__button header__button--active">
         <div class="header__block"></div>
       </button>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item header__nav-item--black"><a href="index.html">Главная</a></li>
+          <li class="header__nav-item header__nav-item--black"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="header__nav-item header__nav-item--black"><a href="#">Подбор программы</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="index.html">Главная</a></li>
-        <li class="header__nav-item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="header__nav-item"><a href="#">Подбор программы</a></li>
-      </ul>
-    </nav>
   </header>
   <main>
     <div class="form">
-      <h2 class="form__title">Подбор программы</h2>
-      <form action="" method="POST" class="form__form">
-        <p class="form__head">Заполните анкету и мы подберем
-          программу питания для вашего кота</p>
-        <div class="form__wrapper">
-          <label for="catName">Имя:*</label>
-          <input class="form__inputText" type="text" id="catName" required placeholder="Барсик">
-        </div>
-        <div class="form__wrapper">
-          <label for="catWeight">Вес (кг):*</label>
-          <input class="form__inputText" type="text" id="catWeight" required placeholder="7">
-        </div>
-        <div class="form__wrapper">
-          <label for="catAge">Возраст (лет):</label>
-          <input class="form__inputText" type="text" id="catAge" placeholder="7">
-        </div>
-
-
-        <ul class="form__radio">
-          <li class="form__radio-item">
-            <input type="radio" id="Lose" name="radio" checked>
-            <label for="Lose">Похудение</label>
-          </li>
-          <li class="form__radio-item">
-            <input type="radio" id="Gain" name="radio">
-            <label for="Gain">Набор массы</label>
-          </li>
-          <li class="form__radio-item">
-            <input type="radio" id="Advice" name="radio">
-            <label for="Advice">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-        <div class="form__titleWrap">
-          <h3 class="form__titleInfo">Контактные данные
-            (владельца кота)</h3>
-          <span class="form__titleLine"></span>
-        </div>
-        <div class="form__wrapper">
-          <label for="email">E-mail:*</label>
-          <input class="form__inputText" type="email" id="email" required placeholder="kuklachev@gmail.com">
-        </div>
-        <div class="form__wrapper">
-          <label for="tel">Телефон:*</label>
-          <input class="form__inputText" type="text" id="tel" required placeholder="8 (960) 900-60-90">
-        </div>
-        <div class="form__titleWrap">
-          <h3 class="form__titleInfo form__titleInfo--second">Комментарий</h3>
-          <span class="form__titleLine"></span>
-        </div>
-        <textarea id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        <div class="form__titleWrap">
-          <h3 class="form__titleInfo form__titleInfo--third">Дополнительно</h3>
-          <span class="form__titleLine"></span>
-        </div>
-        <ul class="form__checkbox">
-          <li class="form__checkbox-item">
-            <input type="checkbox" id="sugar" checked>
-            <label for="sugar">Сахарозаменитель</label>
-          </li>
-          <li class="form__checkbox-item">
-            <input type="checkbox" id="water">
-            <label for="water">Питьевая вода</label>
-          </li>
-          <li class="form__checkbox-item">
-            <input type="checkbox" id="milk">
-            <label for="milk">Молоко</label>
-          </li>
-          <li class="form__checkbox-item">
-            <input type="checkbox" id="vitamin">
-            <label for="vitamin">Витамины</label>
-          </li>
-        </ul>
-        <button class="form_submit" type="submit">Отправить заявку</button>
-        <p class="form__required">* — Обязательные поля</p>
-      </form>
+      <div class="form__wrap">
+        <h2 class="form__title">Подбор программы</h2>
+        <form action="" method="POST" class="form__form">
+          <p class="form__head">Заполните анкету и мы подберем
+            программу питания для вашего кота</p>
+          <div class="form__wrapper">
+            <label for="catName">Имя:*</label>
+            <input class="form__inputText" type="text" id="catName" required placeholder="Барсик">
+          </div>
+          <div class="form__wrapper">
+            <label for="catWeight">Вес (кг):*</label>
+            <input class="form__inputText" type="text" id="catWeight" required placeholder="7">
+          </div>
+          <div class="form__wrapper">
+            <label for="catAge">Возраст (лет):</label>
+            <input class="form__inputText" type="text" id="catAge" placeholder="7">
+          </div>
+          <ul class="form__radio">
+            <li class="form__radio-item">
+              <input type="radio" id="Lose" name="radio" checked>
+              <label for="Lose">Похудение</label>
+            </li>
+            <li class="form__radio-item">
+              <input type="radio" id="Gain" name="radio">
+              <label for="Gain">Набор массы</label>
+            </li>
+            <li class="form__radio-item">
+              <input type="radio" id="Advice" name="radio">
+              <label for="Advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+          <div class="form__titleWrap">
+            <h3 class="form__titleInfo">Контактные данные
+              (владельца кота)</h3>
+            <span class="form__titleLine"></span>
+          </div>
+          <div class="form__wrapper">
+            <label for="email">E-mail:*</label>
+            <input class="form__inputText" type="email" id="email" required placeholder="kuklachev@gmail.com">
+          </div>
+          <div class="form__wrapper">
+            <label for="tel">Телефон:*</label>
+            <input class="form__inputText" type="text" id="tel" required placeholder="8 (960) 900-60-90">
+          </div>
+          <div class="form__titleWrap">
+            <h3 class="form__titleInfo form__titleInfo--second">Комментарий</h3>
+            <span class="form__titleLine"></span>
+          </div>
+          <textarea id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__titleWrap">
+            <h3 class="form__titleInfo form__titleInfo--third">Дополнительно</h3>
+            <span class="form__titleLine"></span>
+          </div>
+          <ul class="form__checkbox">
+            <li class="form__checkbox-item">
+              <input type="checkbox" id="sugar" checked>
+              <label for="sugar">Сахарозаменитель</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input type="checkbox" id="water">
+              <label for="water">Питьевая вода</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input type="checkbox" id="milk">
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="form__checkbox-item">
+              <input type="checkbox" id="vitamin">
+              <label for="vitamin">Витамины</label>
+            </li>
+          </ul>
+          <button class="form__submit" type="submit">Отправить заявку</button>
+          <p class="form__required">* — Обязательные поля</p>
+        </form>
+      </div>
     </div>
     <div class="map">
       <div class="map__head">
@@ -178,6 +179,7 @@
         </iframe>
       </div>
     </div>
+
   </main>
   <footer class="footer">
     <div class="footer__container">

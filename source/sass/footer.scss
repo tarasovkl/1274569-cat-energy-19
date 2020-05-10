@@ -115,9 +115,6 @@
     margin: 0;
   }
 
-  .footer__academy {
-  }
-
   .footer__socials-vk {
     width: 30px;
     height: 16px;
@@ -134,3 +131,25 @@
   }
 
 }
+
+@media (min-width:$desktop-width) {
+  .footer {
+  }
+  .footer__container {
+    margin: 0 auto;
+    padding: 0 40px;
+    min-width: 1220px;
+  }
+  .footer__socials-vk {
+    width: 30px;
+    height: 16px;
+  }
+  .footer__socials-inst {
+    width: 23px;
+    height: 23px;
+  }
+  .footer__socials-fb {
+    width: 14px;
+    height: 28px;
+  }
+ }

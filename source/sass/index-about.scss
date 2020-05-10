@@ -133,3 +133,13 @@
     }
 }
 
+@media (min-width: $desktop-width) {
+  .about {
+    @include containerDesktop;
+    margin-top: 49px;
+  }
+
+  .about__item {
+    flex-basis: 250px;
+  }
+}

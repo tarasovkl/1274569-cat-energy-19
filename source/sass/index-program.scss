@@ -135,3 +135,58 @@
   }
 
 }
+
+@media (min-width:$desktop-width) {
+  .program {
+    @include containerDesktop;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .program__item {
+
+    min-width: 570px;
+    min-height: 372px;
+    &:nth-child(2)
+    .program__text {
+      max-width: 444px;
+    }
+  }
+  .program__logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    margin-top: 47px;
+    margin-left: 52px;
+    .program__cat {
+      position: absolute;
+      width: 71px;
+      height: 97px;
+      top: -5px;
+      left: 14px;
+    }
+    .program__leo {
+      position: absolute;
+      width: 134px;
+      height: 57px;
+      left: -17px;
+      top: 21px;
+    }
+  }
+
+  .program__title {
+    margin-top: 51px;
+    margin-left: 80px;
+  }
+  .program__text {
+    max-width: 462px;
+    margin-top: 45px;
+    margin-bottom: 37px;
+  }
+  .program__line {
+  }
+  .program__catalog {
+  }
+}

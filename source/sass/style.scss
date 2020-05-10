@@ -10,18 +10,24 @@ $footer-svg-color: #666666;
 $bgGrey: #eaeaea;
 
 $tablet-width: 768px;
-$dextop-width: 1300px;
+$desktop-width: 1300px;
 
 @import "_normalize";
 @mixin container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 280px;
+  min-width: 280px;
 }
 @mixin containerTablet {
   margin: 0 auto;
   padding: 0 30px;
   min-width: 708px;
+}
+
+@mixin containerDesktop {
+  margin: 0 auto;
+  padding: 0 40px;
+  min-width: 1220px;
 }
 
 
