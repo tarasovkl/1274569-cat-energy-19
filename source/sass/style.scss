@@ -12,6 +12,15 @@ $bgGrey: #eaeaea;
 $tablet-width: 768px;
 $desktop-width: 1300px;
 
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+       url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "_normalize";
 @mixin container {
   margin: 0 auto;
