@@ -194,32 +194,129 @@
 
     width: auto;
     min-height: 462px;
-    background-color: $bgGrey;
-    clip: rect(0 );
+    background-image: linear-gradient(to right, #cdcdcd 50%, $bgGrey 50%); 
   }
-
-
 
   .example__image--active {
   }
+  
   .example__beforeAfter {
+    width: 569px;
     position: relative;
     padding-top: 369px;
+    font-size: 20px;
   }
 
   .example__img-before {
     position: absolute;
-    left:  0;
+    left: -53px;
     top: -150px;
-    clip: rect(0 338px 499px 0);
+    clip: rect(0 338px 517px 0);
+  }
+
+  .example__img-after {
+    position: absolute;
+    left: -53px;
+    top: -150px;
+    clip: rect(0 690px 517px 338px);
   }
 
   .example__toggles {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+    margin: 5px 0;
 
   }
   .example__toggle {
-  }
-  .example__toggle--active {
+    position: absolute;
+    left: 192px;
+    top: -18px;
+    width: 34px;
+    height: 34px;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #cdcdcd;
+    border-radius: 50%;
+    background: #ffffff;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 13px;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $leaf-color;
+    }
   }
 }
+
+@media (min-width:$desktop-width) {
+  .example {
+    width: auto;
+    margin-top: 100px;
+    background-color: #cdcdcd;
+    min-height: 462px;
+    background-image: linear-gradient(to right, #eaeaea 70%, $bgGrey 30%); 
+  }
+
+  .example__content {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    min-height: 462px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .example__wrapper {
+    position: relative;
+    min-width: 435px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .example__title {
+    position: absolute;
+    top: -170px
+  }
+  .example__text {
+    margin-top: 76px;    
+  }
+  .example__wrap {
+    display: block;
+    margin-bottom: 0;
+  }
+  .example__wrapper-items {
+  }
+  .example__item {
+    
+  }
+  .example__item-text {
+    background: #eaeaea;
+  }
+  .example__costs {
+    max-width: 350px;
+    margin-top: 62px;
+    text-align: left;
+  }
+
+  .example__img-before {
+    clip: rect(0 364px 517px 0);
+    left: -79px;    
+  }
+ 
+  .example__beforeAfter {
+
+  }
+  
+  .example__img-after {
+    clip: rect(0 690px 517px 364px);
+    left: -79px;
+  }
+}
+
+
 
