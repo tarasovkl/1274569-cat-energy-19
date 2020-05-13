@@ -95,44 +95,50 @@
         <form action="" method="POST" class="form__form">
           <p class="form__head">Заполните анкету и мы подберем
             программу питания для вашего кота</p>
-          <div class="form__wrapper">
-            <label for="catName">Имя:*</label>
-            <input class="form__inputText" type="text" id="catName" required placeholder="Барсик">
+          <div class="userInfo">
+            <div class="userInfo-wrap">
+              <div class="form__wrapper">
+                <label for="catName">Имя:*</label>
+                <input class="form__inputText" type="text" id="catName" required placeholder="Барсик">
+              </div>
+              <div class="form__wrapper">
+                <label for="catWeight">Вес (кг):*</label>
+                <input class="form__inputText" type="text" id="catWeight" required placeholder="7">
+              </div>
+              <div class="form__wrapper">
+                <label for="catAge">Возраст (лет):</label>
+                <input class="form__inputText" type="text" id="catAge" placeholder="7">
+              </div>
+            </div>
+            <ul class="form__radio">
+              <li class="form__radio-item">
+                <input type="radio" id="Lose" name="radio" checked>
+                <label for="Lose">Похудение</label>
+              </li>
+              <li class="form__radio-item">
+                <input type="radio" id="Gain" name="radio">
+                <label for="Gain">Набор массы</label>
+              </li>
+              <li class="form__radio-item">
+                <input type="radio" id="Advice" name="radio">
+                <label for="Advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
           </div>
-          <div class="form__wrapper">
-            <label for="catWeight">Вес (кг):*</label>
-            <input class="form__inputText" type="text" id="catWeight" required placeholder="7">
-          </div>
-          <div class="form__wrapper">
-            <label for="catAge">Возраст (лет):</label>
-            <input class="form__inputText" type="text" id="catAge" placeholder="7">
-          </div>
-          <ul class="form__radio">
-            <li class="form__radio-item">
-              <input type="radio" id="Lose" name="radio" checked>
-              <label for="Lose">Похудение</label>
-            </li>
-            <li class="form__radio-item">
-              <input type="radio" id="Gain" name="radio">
-              <label for="Gain">Набор массы</label>
-            </li>
-            <li class="form__radio-item">
-              <input type="radio" id="Advice" name="radio">
-              <label for="Advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
           <div class="form__titleWrap">
             <h3 class="form__titleInfo">Контактные данные
               (владельца кота)</h3>
             <span class="form__titleLine"></span>
           </div>
-          <div class="form__wrapper">
-            <label for="email">E-mail:*</label>
-            <input class="form__inputText" type="email" id="email" required placeholder="kuklachev@gmail.com">
-          </div>
-          <div class="form__wrapper">
-            <label for="tel">Телефон:*</label>
-            <input class="form__inputText" type="text" id="tel" required placeholder="8 (960) 900-60-90">
+          <div class="userInfo">
+            <div class="form__wrapper">
+              <label for="email">E-mail:*</label>
+              <input class="form__inputText" type="email" id="email" required placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="form__wrapper">
+              <label for="tel">Телефон:*</label>
+              <input class="form__inputText" type="text" id="tel" required placeholder="8 (960) 900-60-90">
+            </div>
           </div>
           <div class="form__titleWrap">
             <h3 class="form__titleInfo form__titleInfo--second">Комментарий</h3>

@@ -42,28 +42,13 @@
 }
 .catalog__list-image {
   flex-basis: 140px;
-  &--bg1 {
-    background: url('../img/chicken-small-mobile@1x.jpg') center 4px no-repeat;
-  }
-  &--bg2 {
-    background: url('../img/chicken-big-mobile@1x.jpg') center 4px no-repeat;
-  }
-  &--bg3 {
-    background: url('../img/fish-small-mobile@1x.jpg') center 4px no-repeat;
-  }
-  &--bg4 {
-    background: url('../img/fish-big-mobile@1x.jpg') center 4px no-repeat;
-  }
-  &--bg5 {
-    background: url('../img/buckwheat-small-mobile@1x.jpg') center 4px no-repeat;
-  }
-  &--bg6 {
-    background: url('../img/buckwheat-big-mobile@1x.jpg') center 4px no-repeat;
-  }
-  &--bg7 {
-    background: url('../img/rice-small-mobile@1x.jpg') center 4px no-repeat;
-  }
 }
+
+.catalog__list-image img {
+  width: 140px;
+  height: 144px;
+}
+
 .catalog__list-info {
 flex-basis: 140px;
 }
@@ -170,8 +155,6 @@ flex-basis: 140px;
   }
   .catalog__list-wrapper {
     display: block;
-  }
-  .catalog__list-image {
   }
 
   .catalog__list-info {
