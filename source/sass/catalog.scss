@@ -44,10 +44,6 @@
   flex-basis: 140px;
 }
 
-.catalog__list-image img {
-  width: 140px;
-  height: 144px;
-}
 
 .catalog__list-info {
 flex-basis: 140px;
@@ -149,10 +145,14 @@ flex-basis: 140px;
       background-color: #ffffff;
       text-align: center;
       border: 1px solid rgba(205, 205, 205 , 0.5);
-
       min-height: 429px;
     }
   }
+
+  .catalog__list-item:nth-child(-n+6) {
+    margin-bottom: 140px;
+  }
+  
   .catalog__list-wrapper {
     display: block;
   }
@@ -187,6 +187,20 @@ flex-basis: 140px;
       margin-bottom: 20px;
     }
   }
+  .catalog__list-image {
+    position: relative;
+  }
+
+  .catalog__list-image img {
+    position: absolute;
+    top: -210px;
+  }
+
+  .catalog__list-item:nth-of-type(even) img {
+    position: absolute;
+    top: -240px;
+  }
+
   .catalog__order {
     width: 229px;
     margin: 0 auto;
