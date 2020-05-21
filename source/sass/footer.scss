@@ -18,19 +18,17 @@
   padding-top: 38px;
   padding-bottom: 51px;
 }
+
 .footer__socials {
   position: relative;
   height: 19px;
   list-style: none;
   padding: 0;
   margin: 0px;
-  margin-left: 72px;
-  margin-bottom: 44px;
   display: flex;
   width: 126px;
+  margin: 0 auto 44px auto;
   justify-content: space-between;
-  align-items: flex-end;
-
   &::before {
     position: absolute;
     content: '';
@@ -52,7 +50,7 @@
     left: -77px;
   }
   svg {
-    fill: $footer-svg-color
+    fill: $footer-svg-color;
   }
   a {
     display: block;
@@ -68,14 +66,17 @@
   }
 }
 
+
+
 .footer__academy {
   a {
   height: 16px;
   line-height: 16px;
   color: $text-color;
+  font-family: $font-main;
   }
   svg {
-    fill: $footer-svg-color
+    fill: $footer-svg-color;
   }
 }
 

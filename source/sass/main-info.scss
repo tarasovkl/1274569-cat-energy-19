@@ -109,10 +109,14 @@
 
 @media (min-width:$desktop-width) {
   .main-info {
-    margin-top: 0;
     overflow: visible;
+    margin-top: 0;
     &::before{
-      display: none;
+      display: block;
+      width: 50vw;
+      height: 696px;
+      top: -143px;
+      left: 50%;
     }
   }
   .main-info__background {

@@ -228,14 +228,16 @@
   }
 }
 
-.form__checkbox-item input:checked + label::after {
+.form__checkbox-icon {
   position: absolute;
-  content: '';
-  width: 22px;
-  height: 17px;
-  background: url('../img/icon-tick.svg') left center no-repeat;
   left: 5px;
   top: 4px;
+  display: none;
+  fill: $leaf-color;
+}
+
+.form__checkbox-item input:checked + svg{
+  display: block;
 }
 
 .form__submit {
@@ -430,16 +432,12 @@
     display: none;
   }
 
-  .form__checkbox input:checked + label::after {
-    position: absolute;
-    content: '';
-    width: 21px;
-    height: 16px;
-    background: url('../img/icon-tick.svg');
-
+  .form__checkbox-icon {
+    left: 10px;
+    top: 7px;
   }
 
-  .form__checkbox-item {
+   .form__checkbox-item {
     min-width: 288px;
     margin-bottom: 52px;
   }

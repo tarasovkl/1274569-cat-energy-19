@@ -25,7 +25,7 @@
   font-family: $font-main;
   color: $text-color;
   margin-bottom: 25px;
-  max-width: 268px;
+  max-width: 273px;
 }
 .example__wrapper-items {
   display: flex;
@@ -298,7 +298,7 @@
     margin-top: 128px;
     background-color: #cdcdcd;
     min-height: 462px;
-    background-image: linear-gradient(to right, $program-color 70%, $bgGrey 30%);
+    background-image: linear-gradient(to right, $program-color 75%, $bgGrey 25%);
   }
 
   .example__content {
@@ -319,10 +319,11 @@
 
   .example__title {
     position: absolute;
-    top: -170px
+    top: -150px
   }
   .example__text {
-    margin-top: 76px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
   .example__wrap {
     display: block;
@@ -330,7 +331,8 @@
   }
   .example__wrapper-items {
   }
-  .example__item {
+  .example__before {
+    background-image: linear-gradient(to right, $program-color 53%, $bgGrey 47%);
 
   }
   .example__item-text {
@@ -342,18 +344,25 @@
     text-align: left;
   }
 
+.example__images {
+  
+}
+
   .example__img-before {
     clip: rect(0 364px 517px 0);
-    left: -79px;
+    left: -42px;
+    top: -191px;
   }
 
   .example__beforeAfter {
+    width: 669px;
 
   }
 
   .example__img-after {
     clip: rect(0 690px 517px 364px);
-    left: -79px;
+    left: -42px;
+    top: -191px;
   }
 }
 
