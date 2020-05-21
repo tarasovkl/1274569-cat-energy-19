@@ -2,6 +2,7 @@
   max-width: 280px;
   margin: 0 auto 35px auto;
   padding: 0 20px;
+
 }
 .additional__title {
   position: relative;
@@ -10,12 +11,12 @@
   color: $top-color;
   font-weight: normal;
   font-family: $font-head;
-  margin: 0 0 45px 0;
+  margin: 0 0 47px 0px;
   &::before {
     position: absolute;
     content: '';
     height: 3px;
-    min-width: 53px;
+    min-width: 50vw;
     background-color: $leaf-color;
     left: 248px;
     top: 14px;
@@ -27,7 +28,7 @@
     height: 1px;
     background-color: #000000;
     opacity: 0.2;
-    top: 55px;
+    top: 58px;
     left: 0;
   }
 }
@@ -40,7 +41,7 @@
 
 }
 .additional__item {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   position: relative;
   &::after {
     position: absolute;
@@ -87,7 +88,7 @@
 .additional__gift {
   min-height: 289px;
   background: url('../img/gift-photo-mobile@1x.jpg') center no-repeat;
-  margin-top: 25px;
+  margin-top: 27px;
     p {
     max-width: 165px;
     font-size: 16px;
@@ -112,11 +113,26 @@
   .additional__title {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 79px;
+    margin-left: 37px;
     &::after {
-      display: none;
+      position: absolute;
+      content: '';
+      width: 100vw;
+      height: 3px;
+      background-color: $leaf-color;
+      left: -104vw;
+      top: 22px;
+      opacity: 1;
     }
     &::before {
-      display: none;
+      position: absolute;
+      content: '';
+      width: 100vw;
+      height: 3px;
+      background-color: $leaf-color;
+      left: 374px;
+      top: 22px;
     }
   }
 
@@ -131,17 +147,20 @@
   .additional__item-title {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 26px;
-
+    margin-bottom: 24px;
   }
+
   .additional__item-wrapper {
+    align-items: center;
     p {
       font-size: 16px;
       line-height: 20px;
       display: inline;
-      margin-left: 52px;
+      margin-left: 50px;
+      margin-top: -4px;
     }
   }
+
   .additional__item-order {
     max-width: 613px;
     margin: 0 auto;
@@ -149,11 +168,11 @@
   .additional__gift {
     @include containerTablet;
     padding: 0;
-    margin-top: 69px;
+    margin-top: 71px;
     background: url('../img/gift-photo-tablet@1x.jpg') center no-repeat;
     min-height: 200px;
     P {
-      margin-top: 65px;
+      padding-top: 71px;
       padding-left: 273px;
       display: inline-block;
       vertical-align: middle;
@@ -162,7 +181,7 @@
   }
 
   .additional__gift-logo {
-    margin-top: 65px;
+    margin-top: 60px;
     margin-left: 91px;
     padding: 0;
     display: inline-block;
@@ -184,6 +203,10 @@
     margin-bottom: 86px;
   }
   .additional__title {
+    margin-left: 0;
+    &::after {
+      left: -102vw;
+    }
   }
   .additional__items {
     min-width: 895px;
@@ -240,8 +263,11 @@
     padding-left: 38px;
     text-align: center;
     margin-top: 61px;
+    padding-top: 0;
   }
   .additional__gift-logo {
+    margin-left: 95px;
+    margin-top: 64px;
   }
 
   .additional__wrap {

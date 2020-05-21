@@ -2,6 +2,17 @@
 .header {
   width: auto;
 }
+
+.header__logo {
+  max-width: 200px;
+  display: block;
+  width: 100%;
+}
+
+.header__logo img {
+  width: 191px;
+}
+
 .header__container {
   max-width: 280px;
   min-height: 65px;
@@ -14,7 +25,7 @@
   padding: 0 20px;
 }
 .header__nav {
-  display: block;
+
   min-height: 195px;
   flex-grow: 1;
   margin-top: 14px;
@@ -67,10 +78,18 @@
 @media (min-width:$tablet-width) {
   .header {
   }
+
+  .header__logo img {
+    width: 174px;
+  }
+
   .header__container {
     margin: 0 auto;
     padding: 0 30px;
     min-width: 708px;
+    align-items: center;
+    padding-top: 23px;
+
   }
 
   .header__button {
@@ -80,7 +99,7 @@
     min-height: 18px;
     flex-grow: 0;
     margin-top: 0;
-    width: 438px;
+    width: 439px;
   }
   .header__nav-list {
     display: flex;
@@ -96,6 +115,45 @@
     text-align: center;
     padding-top: 0;
   }
+
+  .header__nav-item--active1 {
+    position: relative;
+      &::before {
+      position: absolute;
+      content: '';
+      width: 62px;
+      height: 2px;
+      background-color: $leaf-color;
+      top: 31px;
+      left: 0px;
+    }
+  }
+
+  .header__nav-item--active2 {
+    position: relative;
+      &::before {
+      position: absolute;
+      content: '';
+      width: 152px;
+      height: 2px;
+      background-color: $leaf-color;
+      top: 31px;
+      left: 0px;
+    }
+  }
+
+  .header__nav-item--active3 {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 151px;
+      height: 2px;
+      background-color: $leaf-color;
+      top: 31px;
+      left: 0px;
+    }
+  }
 }
 
 @media (min-width:$desktop-width) {
@@ -105,14 +163,59 @@
     padding: 0 40px;
     min-width: 1220px;
     min-height: 113px;
+    padding-top: 30px;
   }
+
+  .header__container img {
+    width: 230px;
+    height: 60px;
+    margin-left: -13px;
+  }
+
+  .header__nav {
+
+    width: 479px;
+  }
+
+  .header__nav-item {
+    position: relative;
+    font-size: 20px;
+    line-height: 25px;
+  }
+    &:first-child::before {
+      width: 68px;
+      background-color: #ffffff;
+      top: 32px;
+      left: 1px;
+    }
   .header__nav-item a {
     color: $text-head;
   }
-  .header__nav-item--black a{
+  .header__nav-item--black a {
     color: $top-color;
-
   }
 }
 
+.header__nav-item--active1 {
+    &::before {
+    width: 68px;
+    top: 32px;
+    left: 0px;
+  }
+}
+
+.header__nav-item--active2 {
+    &::before {
+    width: 168px;
+    top: 32px;
+    left: 1px;
+  }
+}
+
+.header__nav-item--active3 {
+  &::before {
+    width: 169px;
+    top: 32px;
+  }
+}
 

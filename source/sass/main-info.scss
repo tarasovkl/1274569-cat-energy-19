@@ -1,17 +1,26 @@
 .main-info {
+  overflow: hidden;
+  position: relative;
   width: auto;
   min-height: 480px;
   margin: 0 auto;
   font-family: $font-head;
-  background: url('..//img/index-background-mobile@1x.jpg') top center no-repeat;
-  background-size: 100% 305px;
+  background: url('../img/index-background-mobile@1x.jpg') top center no-repeat;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 305px;
+    background-color: #63a73a;
+    z-index: -1;
+  }
 }
 
 .main-info__background{
   margin: 0 auto;
   max-width: 320px;
   min-height: 440px;
-  background: url('..//img/index-can-mobile@1x.png') center 166px no-repeat;
+  background: url('../img/index-can-mobile@1x.png') center 166px no-repeat;
 }
 
 .main-info__container {
@@ -26,7 +35,7 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
-  padding-top: 25px;
+  padding-top: 27px;
 }
 
 .main-info__text {
@@ -50,30 +59,35 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 290px;
+  margin-top: 301px;
 }
 
 @media (min-width:$tablet-width) {
   .main-info {
+    margin-top: 20px;
     background: none;
+    &::before{
+      display: none;
+    }
   }
   .main-info__background {
     padding: 0 30px;
     min-width: 708px;
-    min-height: 850px;
-    background: url('..//img/index-can-tablet@1x.jpg') center 245px no-repeat;
+    min-height: 842px;
+    background: url('..//img/index-can-tablet@1x.jpg') center 233px no-repeat;
   }
   .main-info__container {
     text-align: left;
     padding: 0;
-    padding-left: 90px;
+    padding-left: 88px;
   }
   .main-info__title {
     max-width: 415px;
     font-size: 60px;
     line-height: 60px;
     color: $top-color;
-    margin-bottom: 33px;
+    margin-bottom: 16px;
+    padding-top: 32px;
   }
   .main-info__text {
     font-size: 20px;
@@ -82,50 +96,59 @@
   }
   .main-info__button {
     margin: 0;
-    margin-top: 48px;
-    margin-left: 90px;
+    margin-top: 47px;
+    margin-left: 89px;
     padding: 16px;
     font-size: 20px;
     line-height: 20px;
     color: $text-head;
-    max-width: 245px;
+    width: 213px;
   }
 }
 
 
 @media (min-width:$desktop-width) {
   .main-info {
-
+    margin-top: 0;
+    overflow: visible;
+    &::before{
+      display: none;
+    }
   }
   .main-info__background {
     position: relative;
     padding: 0 40px;
     min-width: 1220px;
-    background-position: 450px 0;
-    min-height: 654px;
-    background: url('..//img/index-can-desktop@1x.png') 490px top no-repeat;
+    min-height: 633px;
+    background: url('../img/index-can-desktop@1x.png') 490px 0px no-repeat;
     &::after {
       position: absolute;
       content: '';
       width: 720px;
       height: 696px;
-      top: -113px;
-      left: 650px;
-      background: url('..//img/index-background-desktop@1x.jpg') center no-repeat;
+      top: -143px;
+      left: 649px;
+      background: url('../img/index-background-desktop@1x.jpg') top no-repeat;
+      background-size: cover;
       z-index: -1;
     }
   }
   .main-info__container {
-    padding-top: 84px;
+    padding-top: 79px;
+    padding-left: 80px;
   }
   .main-info__title {
     padding: 0;
+    margin-bottom: 41px;
   }
   .main-info__text {
     padding: 0;
   }
   .main-info__button {
+    margin-left: 80px;
+    margin-top: 53px;
   }
+
   .main-info__desktopBG {
     position: absolute;
     width: 720px;
