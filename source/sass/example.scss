@@ -1,4 +1,5 @@
 .example {
+  overflow: hidden;
   width: auto;
   background-color: $program-color;
   min-height: 705px;
@@ -15,15 +16,16 @@
   color: $top-color;
   font-family: $font-head;
   font-weight: normal;
-  padding-top: 20px;
-  padding-bottom: 33px;
+  padding-top: 18px;
+  padding-bottom: 22px;
 }
 .example__text {
   font-size: 14px;
   line-height: 18px;
   font-family: $font-main;
   color: $text-color;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
+  max-width: 273px;
 }
 .example__wrapper-items {
   display: flex;
@@ -65,11 +67,13 @@
   color: $top-color;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 38px;
+  margin-top: 35px;
   margin-bottom: 34px;
 }
 .example__images {
-
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
   min-height: 240px;
   margin-bottom: 35px;
@@ -85,6 +89,7 @@
   width: 197px;
   display: flex;
   margin: 0 auto;
+  padding-top: 271px;
   justify-content: space-between;
   font-family: $font-head;
   text-transform: uppercase;
@@ -95,6 +100,23 @@
     margin: 0;
   }
 }
+
+.example__img-before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
+
+.example__img-after {
+  display: none;
+  position: absolute;
+  left: -71px;
+  top: 0px;
+
+}
+
+
 .example__toggles {
   display: flex;
   justify-content: space-between;
@@ -125,7 +147,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    min-height: 1081px;
+    min-height: 1051px;
     background-color: #ffffff;
   }
   .example__wrapper {
@@ -141,18 +163,18 @@
   .example__title {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 51px;
-    padding-bottom: 60px;
+    padding-top: 13px;
+    padding-bottom: 64px;
 
   }
   .example__text {
     font-size: 16px;
     line-height: 24px;
-    max-width: 675px;
-    margin-bottom: 56px;
+    max-width: 676px;
+    margin-bottom: 53px;
   }
   .example__wrapper-items {
-    width: 366px;
+    width: 367px;
   }
 
   .example__item {
@@ -167,59 +189,182 @@
     font-size: 14px;
     line-height: 14px;
     max-width: 150px;
-
     width: auto;
     padding: 0 8px;
     top: 62px;
     background-color: $text-head;
-
   }
   .example__costs {
+    position: relative;
     margin: 0;
-    margin-top: 13px;
+    margin-top: 12px;
     text-align: right;
     max-width: 174px;
     font-size: 20px;
     line-height: 20px;
-
   }
-  .example__images {
 
-  }
-  .example__image {
-
+  .example__costs span {
+    position: absolute;
+    top: 28px;
+    left: 83px;
   }
 
   .example__before {
-
     width: auto;
     min-height: 462px;
-    background-color: $bgGrey;
-    clip: rect(0 );
+    background-image: linear-gradient(to right, $program-color 50%, $bgGrey 50%);
   }
 
-
-
-  .example__image--active {
+  .example__images {
+    max-width: 569px;
   }
+
   .example__beforeAfter {
+    display: flex;
+    justify-content: space-between;
+    width: 569px;
     position: relative;
     padding-top: 369px;
+    font-size: 20px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 45px;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+      top: 394px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 49px;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+      top: 394px;
+      left: 520px;
+    }
   }
 
   .example__img-before {
     position: absolute;
-    left:  0;
-    top: -150px;
-    clip: rect(0 338px 499px 0);
+    left: -34px;
+    top: -168px;
+    clip: rect(0 338px 517px 0);
+  }
+
+  .example__img-after {
+    display: block;
+    position: absolute;
+    left: -34px;
+    top: -168px;
+    clip: rect(0 690px 517px 338px);
   }
 
   .example__toggles {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+    margin: 5px 0;
 
   }
   .example__toggle {
-  }
-  .example__toggle--active {
+    position: absolute;
+    left: 192px;
+    top: -18px;
+    width: 34px;
+    height: 34px;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #cdcdcd;
+    border-radius: 50%;
+    background: #ffffff;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 13px;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $leaf-color;
+    }
   }
 }
+
+@media (min-width:$desktop-width) {
+  .example {
+    overflow: visible;
+    width: auto;
+    margin-top: 128px;
+    background-color: #cdcdcd;
+    min-height: 462px;
+    background-image: linear-gradient(to right, $program-color 75%, $bgGrey 25%);
+  }
+
+  .example__content {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    min-height: 462px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .example__wrapper {
+    position: relative;
+    min-width: 435px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .example__title {
+    position: absolute;
+    top: -150px
+  }
+  .example__text {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .example__wrap {
+    display: block;
+    margin-bottom: 0;
+  }
+  .example__wrapper-items {
+  }
+  .example__before {
+    background-image: linear-gradient(to right, $program-color 53%, $bgGrey 47%);
+
+  }
+  .example__item-text {
+    background: $program-color;
+  }
+  .example__costs {
+    max-width: 350px;
+    margin-top: 62px;
+    text-align: left;
+  }
+
+.example__images {
+  
+}
+
+  .example__img-before {
+    clip: rect(0 364px 517px 0);
+    left: -42px;
+    top: -191px;
+  }
+
+  .example__beforeAfter {
+    width: 669px;
+
+  }
+
+  .example__img-after {
+    clip: rect(0 690px 517px 364px);
+    left: -42px;
+    top: -191px;
+  }
+}
+
+
 

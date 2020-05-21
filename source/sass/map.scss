@@ -1,15 +1,31 @@
 .map {
   min-height: 476px;
+  overflow: hidden;
 }
 .map__head {
+  position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 83px;
   max-width: 280px;
   padding: 0 20px;
   margin: 0 auto;
-  padding-top: 31px;
+  padding-top: 28px;
 }
+
+.map__head--bg {
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: $bgGrey;
+    width: 150vw;
+    z-index: -1;
+    height: 114px;
+    left: -50vw;
+    top: 0;
+  }
+}
+
 
 .map__title {
   flex-basis: 124px;
@@ -34,30 +50,42 @@
 }
 
 @media (min-width:$tablet-width) {
-  .map {
-    min-height: 601px;
+  .map__head--bg {
+    background-color: $bgGrey;
+    &::before {
+      height: 201px;
+    }
   }
 
   .map__head {
-  min-width: 625px;
-  padding: 0;
-  min-height: 201px;
-  padding-left: 76px;
-  padding-right: 90px;
-  align-items: center;
+    min-width: 625px;
+    padding: 0;
+    height: 201px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 
   .map__title {
     font-size: 20px;
     line-height: 25px;
     flex-basis: 154px;
+    padding-top: 65px;
   }
 
   .map__adress {
+    position: relative;
     font-size: 16px;
     line-height: 20px;
     flex-basis: 155px;
     text-align: right;
+    align-self: flex-start;
+    padding-top: 63px;
+  }
+
+  .map__adress span {
+    position: absolute;
+    top: 124px;
+    left: 29px;
   }
 
   .map__image {
@@ -76,11 +104,17 @@
   .map__head {
     position: absolute;
     min-width: 404px;
-    left: 110px;
+    left: 221px;
     top: 95px;
     background-color: $text-head;
+    padding-left: 76px;
+    padding-right: 90px;
   }
   .map__adress {
     text-align: left;
   }
+  .map__adress span {
+    left: 0;
+  }
+
 }
