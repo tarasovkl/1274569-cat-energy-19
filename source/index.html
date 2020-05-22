@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
@@ -62,7 +60,6 @@
           </svg>
         </a>
       </div>
-
       <div class="program__item">
         <div class="program__logo">
           <svg class="program__leo" width="67" height="28">
@@ -84,19 +81,15 @@
       <h2 class="about__title">Как это работает</h2>
       <ul class="about__items">
         <li class="about__item about__item--bg1">
-          <div class="about__icon about__icon--image1"></div>
           <p class="about__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="about__item about__item--bg2">
-          <div class="about__icon about__icon--image2"></div>
           <p class="about__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="about__item about__item--bg3">
-          <div class="about__icon about__icon--image3"></div>
           <p class="about__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="about__item about__item--bg4">
-          <div class="about__icon about__icon--image4"></div>
           <p class="about__text">Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего питомца!</span></p>
         </li>
       </ul>
@@ -126,14 +119,14 @@
         <div class="example__before">
           <div class="example__images">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-              <img class="example__img-before" src="img/before-mobile@1x.png" alt="Изображение кота до">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="example__img-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" alt="Изображение кота до">
             </picture>
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-              <img class="example__img-after" src="img/after-mobile@1x.png" alt="Изображение кота после">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="example__img-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" alt="Изображение кота после">
             </picture>
             <div class="example__beforeAfter">
               <p>Было</p>
@@ -146,7 +139,6 @@
           </div>
         </div>
       </div>
-
     </article>
     <div class="map">
       <div class="map__head">
@@ -212,5 +204,4 @@
   </main>
 </body>
 <script src="js/picturefill.min.js"></script>
-
 </html>

@@ -188,26 +188,24 @@
   .example__item-text {
     font-size: 14px;
     line-height: 14px;
-    max-width: 150px;
-    width: auto;
+    max-width: 280px;
     padding: 0 8px;
     top: 62px;
     background-color: $text-head;
   }
   .example__costs {
-    position: relative;
+
     margin: 0;
     margin-top: 12px;
     text-align: right;
-    max-width: 174px;
+    max-width: 175px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .example__costs span {
-    position: absolute;
-    top: 28px;
-    left: 83px;
+    display: block;
+    margin-top: 8px;
   }
 
   .example__before {
@@ -329,8 +327,6 @@
     display: block;
     margin-bottom: 0;
   }
-  .example__wrapper-items {
-  }
   .example__before {
     background-image: linear-gradient(to right, $program-color 53%, $bgGrey 47%);
 
@@ -339,32 +335,43 @@
     background: $program-color;
   }
   .example__costs {
-    max-width: 350px;
+    max-width: 367px;
     margin-top: 62px;
     text-align: left;
   }
 
-.example__images {
-  
-}
+  .example__costs span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -8px;
+    margin-left: 60px;
+  }
 
-  .example__img-before {
+.example__img-before {
     clip: rect(0 364px 517px 0);
     left: -42px;
     top: -191px;
   }
 
   .example__beforeAfter {
-    width: 669px;
-
+    width: 609px;
+    &::before {
+      left: 16px;
+    }
+    &::after {
+      left: 540px;
+    }
   }
 
+  .example__beforeAfter p:first-child{
+    margin-left: 17px;
+  }
+  .example__beforeAfter p:last-child{
+    margin-right: 19px;
+  }
   .example__img-after {
     clip: rect(0 690px 517px 364px);
     left: -42px;
     top: -191px;
   }
 }
-
-
-

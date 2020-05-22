@@ -24,36 +24,33 @@
 }
 
 .about__item {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   margin-bottom: 20px;
   align-items: center;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-color: $leaf-color;
+    top: 0;
+    left: 0;
+    background-image: url('../img/advantage-leaf@1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 }
-.about__icon{
-  width: 60px;
-  height: 60px;
-  background-color: $leaf-color;
-  &--image1 {
-    background-image: url('..//img/advantage-leaf@1x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &--image2 {
-    background-image: url('..//img/advantage-powder@1x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &--image3 {
-    background-image: url('..//img/advantage-dining@1x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &--image4 {
-    background-image: url('..//img/advantage-clock@1x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.about__item--bg2::after {
+    background-image: url('../img/advantage-powder@1x.png');
 }
+.about__item--bg3::after {
+    background-image: url('../img/advantage-dining@1x.png');
+}
+.about__item--bg4::after {
+  background-image: url('../img/advantage-clock@1x.png');
+}
+
 .about__text {
   font-family: $font-main;
   font-size: 14px;
@@ -61,8 +58,24 @@
   color: $text-color;
   max-width: 201px;
   margin: 0;
+  margin-left: 80px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .about__item::after {
+    background-image: url('../img/advantage-leaf@2x.png');
+  }
+  .about__item--bg2::after {
+    background-image: url('../img/advantage-powder@2x.png');
+  }
+  .about__item--bg3::after {
+    background-image: url('../img/advantage-dining@2x.png');
+  }
+  .about__item--bg4::after {
+  background-image: url('../img/advantage-clock@2x.png');
+  }
+
+}
 @media (min-width: $tablet-width) {
 .about {
   @include containerTablet;
@@ -99,20 +112,18 @@
     color: $program-color;
     z-index: -1;
   }
-  }
-
-.about__icon {
+}
+.about__item::after {
   width: 80px;
   height: 80px;
-  }
-
+}
 .about__text {
-  margin-top: 32px;
+  margin-top: 112px;
   font-size: 16px;
   line-height: 24px;
   max-width: 245px;
+  margin-left: 0;
   }
-
 .about__text span {
   display: table;
 }
@@ -137,7 +148,6 @@
       }
     }
 }
-
 @media (min-width: $desktop-width) {
   .about {
     @include containerDesktop;

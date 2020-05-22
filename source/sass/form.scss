@@ -3,7 +3,6 @@
   font-family: $font-head;
   margin-bottom: 31px;
   overflow: hidden;
-
 }
 
 .form__wrap {
@@ -155,10 +154,6 @@
   }
 }
 
-.form__titleWrap {
-
-  }
-
 .form__titleLine{
   display: block;
   display: none;
@@ -278,9 +273,6 @@
     line-height: 60px;
     margin-top: 53px;
   }
-  .form__form {
-  }
-
 .form__form label {
   font-size: 20px;
   line-height: 20px;
@@ -343,14 +335,11 @@
     left: 39px;
     top: 8px;
   }
-
-  .form__titleWrap {
-  }
   .form__titleInfo {
     position: relative;
     font-size: 36px;
     line-height: 36px;
-    max-width: 512px;
+    max-width: 513px;
     width: auto;
     margin-top: 79px;
     margin-bottom: 76px;
@@ -364,10 +353,7 @@
       top: 22px;
     }
   }
-  .form__titleLine {
-  }
-
-  .form textarea {
+   .form textarea {
     width: 598px;
     height: 142px;
     font-size: 20px;
@@ -460,8 +446,6 @@
 }
 
 @media (min-width:$desktop-width) {
-  .form {
-  }
   .form__wrap {
     margin: 0 auto;
     padding: 0 40px;
@@ -471,10 +455,6 @@
   .form__title {
     margin-left: 0;
     margin-top: 0;
-
-  }
-  .form__form {
-
   }
 
   .userInfo{
@@ -492,8 +472,6 @@
   }
   .form__wrapper {
     min-width: 571px;
-  }
-  .form__inputText {
   }
   .form__radio {
     margin: 0;
@@ -537,7 +515,6 @@
     min-width: 247px;
     &:nth-child(2n+1) {
       margin: 0;
-
     }
   }
   .form__submit {

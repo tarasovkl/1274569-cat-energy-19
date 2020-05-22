@@ -12,7 +12,6 @@
   margin: 0 auto;
   padding-top: 28px;
 }
-
 .map__head--bg {
   &::before {
     position: absolute;
@@ -25,8 +24,6 @@
     top: 0;
   }
 }
-
-
 .map__title {
   flex-basis: 124px;
   font-size: 16px;
@@ -44,11 +41,9 @@
   font-family: $font-main;
   margin: 0;
 }
-
 .map__image {
   height: 362px;
 }
-
 @media (min-width:$tablet-width) {
   .map__head--bg {
     background-color: $bgGrey;
@@ -56,24 +51,19 @@
       height: 201px;
     }
   }
-
   .map__head {
     min-width: 625px;
-    padding: 0;
+    padding: 0 90px;
     height: 201px;
-    padding-left: 90px;
-    padding-right: 90px;
-  }
 
+  }
   .map__title {
     font-size: 20px;
     line-height: 25px;
-    flex-basis: 154px;
+    flex-basis: 157px;
     padding-top: 65px;
   }
-
   .map__adress {
-    position: relative;
     font-size: 16px;
     line-height: 20px;
     flex-basis: 155px;
@@ -83,11 +73,10 @@
   }
 
   .map__adress span {
-    position: absolute;
-    top: 124px;
-    left: 29px;
+    display: table;
+    margin-left: 28px;
+    margin-top: 20px;
   }
-
   .map__image {
     min-height: 400px;
     iframe {
@@ -95,7 +84,6 @@
     }
   }
 }
-
 @media (min-width:$desktop-width) {
   .map {
     position: relative;
@@ -104,7 +92,7 @@
   .map__head {
     position: absolute;
     min-width: 404px;
-    left: 221px;
+    left: 120px;
     top: 95px;
     background-color: $text-head;
     padding-left: 76px;
@@ -114,7 +102,7 @@
     text-align: left;
   }
   .map__adress span {
-    left: 0;
+    display: table;
+    margin-left: 0px;
   }
-
 }
