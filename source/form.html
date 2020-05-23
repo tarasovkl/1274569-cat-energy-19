@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="header">
     <div class="header__container">
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -20,13 +22,14 @@
         </picture>
       </a>
       <button class="header__button">
-        <div class="header__block header__block--close"></div>
+        <div class="header__block"></div>
       </button>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item header__nav-item--black"><a href="index.html">Главная</a></li>
           <li class="header__nav-item header__nav-item--black"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="header__nav-item header__nav-item--black header__nav-item--active3"><a href="#">Подбор программы</a></li>
+          <li class="header__nav-item header__nav-item--black header__nav-item--active3"><a href="#">Подбор
+              программы</a></li>
         </ul>
       </nav>
     </div>
@@ -68,58 +71,60 @@
               </li>
             </ul>
           </div>
-            <h3 class="form__titleInfo form__titleInfo--first">Контактные данные
-              (владельца кота)</h3>
+          <h3 class="form__titleInfo form__titleInfo--first">Контактные данные
+            (владельца кота)</h3>
           <div class="userInfo">
             <div class="form__wrapper">
               <label for="email">E-mail:*</label>
-              <input class="form__inputText form__inputText--margin" type="email" id="email" required placeholder="kuklachev@gmail.com">
+              <input class="form__inputText form__inputText--margin" type="email" id="email" required
+                placeholder="kuklachev@gmail.com">
               <svg class="userInfo__mail" width="18px" height="14px">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
             <div class="form__wrapper">
               <label for="tel">Телефон:*</label>
-              <input class="form__inputText form__inputText--margin" type="text" id="tel" required placeholder="8 (960) 900-60-90">
+              <input class="form__inputText form__inputText--margin" type="tel" id="tel" required
+                placeholder="8 (960) 900-60-90">
               <svg class="userInfo__tel" width="21px" height="21px">
                 <use xlink:href="#icon-phone"></use>
               </svg>
             </div>
           </div>
-            <h3 class="form__titleInfo form__titleInfo--second">Комментарий</h3>
+          <h3 class="form__titleInfo form__titleInfo--second">Комментарий</h3>
           <textarea id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-            <h3 class="form__titleInfo form__titleInfo--third">Дополнительно</h3>
+          <h3 class="form__titleInfo form__titleInfo--third">Дополнительно</h3>
           <ul class="form__checkbox">
             <li class="form__checkbox-item">
               <label for="sugar">Сахарозаменитель
-              <input type="checkbox" id="sugar" checked>
-              <svg class="form__checkbox-icon" width="22" height="17">
+                <input type="checkbox" id="sugar" checked>
+                <svg class="form__checkbox-icon" width="22" height="17">
                   <use xlink:href="#icon-tick"></use>
-              </svg>
+                </svg>
               </label>
             </li>
             <li class="form__checkbox-item">
               <label for="water">Питьевая вода
-              <input type="checkbox" id="water">
-              <svg class="form__checkbox-icon" width="22" height="17">
-                <use xlink:href="#icon-tick"></use>
-              </svg>
+                <input type="checkbox" id="water">
+                <svg class="form__checkbox-icon" width="22" height="17">
+                  <use xlink:href="#icon-tick"></use>
+                </svg>
               </label>
             </li>
             <li class="form__checkbox-item">
               <label for="milk">Молоко
-              <input type="checkbox" id="milk">
-              <svg class="form__checkbox-icon" width="22" height="17">
-                <use xlink:href="#icon-tick"></use>
-              </svg>
+                <input type="checkbox" id="milk">
+                <svg class="form__checkbox-icon" width="22" height="17">
+                  <use xlink:href="#icon-tick"></use>
+                </svg>
               </label>
             </li>
             <li class="form__checkbox-item">
               <label for="vitamin">Витамины
-              <input type="checkbox" id="vitamin">
-              <svg class="form__checkbox-icon" width="22" height="17">
-                <use xlink:href="#icon-tick"></use>
-              </svg>
+                <input type="checkbox" id="vitamin">
+                <svg class="form__checkbox-icon" width="22" height="17">
+                  <use xlink:href="#icon-tick"></use>
+                </svg>
               </label>
             </li>
           </ul>
@@ -134,7 +139,10 @@
         <p class="map__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
       <div class="map__image">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60378725332!2d30.320858716359368!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588276499419!5m2!1sru!2sru" width="100%" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60378725332!2d30.320858716359368!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588276499419!5m2!1sru!2sru"
+          height="362" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0">
         </iframe>
       </div>
     </div>
@@ -174,7 +182,7 @@
         <div class="footer__academy">
           <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
-        <a href="">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
@@ -182,6 +190,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/picturefill.min.js"></script>
 </body>
-<script src="js/picturefill.min.js"></script>
+
 </html>

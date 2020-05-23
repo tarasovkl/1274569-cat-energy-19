@@ -28,58 +28,64 @@
   width: 126px;
   margin: 0 auto 44px auto;
   justify-content: space-between;
+
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 280px;
     height: 1px;
-    background-color: #000;
+    background-color: #000000;
     opacity: 0.1;
     top: -22px;
     left: -77px;
   }
+
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 280px;
     height: 1px;
-    background-color: #000;
+    background-color: #000000;
     opacity: 0.1;
     top: 40px;
     left: -77px;
   }
-  svg {
-    fill: $footer-svg-color;
-  }
-  a {
-    display: block;
-  }
 }
+
+.footer__socials svg {
+  fill: $footer-svg-color;
+}
+
+.footer__socials a {
+  display: block;
+}
+
 .footer__wrapper {
   max-width: 280px;
   display: flex;
   justify-content: space-between;
-  svg {
-    fill: $footer-svg-color;
-  }
+}
+
+.footer__wrapper svg {
+  fill: $footer-svg-color;
 }
 
 .footer__academy {
   padding-top: 6px;
-  a {
+}
+
+.footer__academy a {
   height: 16px;
   line-height: 16px;
   color: $text-color;
   font-family: $font-main;
-  }
-  svg {
-    fill: $footer-svg-color;
-  }
 }
 
+.footer__academy svg {
+  fill: $footer-svg-color;
+}
 
-
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .footer {
     min-height: 89px;
   }
@@ -105,10 +111,12 @@
     margin-left: 17px;
     align-items: center;
     margin-top: 4px;
+
     &::before {
       display: none;
     }
-    &::after{
+
+    &::after {
       display: none;
     }
   }
@@ -138,36 +146,42 @@
     width: 14px;
     height: 28px;
   }
+
   .footer__academy {
     padding-top: 0;
   }
-  .footer__wrapper a{
+
+  .footer__wrapper a {
     height: 34px;
     margin-top: -6px;
   }
-
 }
 
-@media (min-width:$desktop-width) {
-  .footer__wrapper{
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
     padding-top: 7px;
   }
+
   .footer__container {
     margin: 0 auto;
     min-width: 1220px;
   }
+
   .footer__socials-vk {
     width: 30px;
     height: 16px;
   }
+
   .footer__socials-inst {
     width: 23px;
     height: 23px;
   }
+
   .footer__socials-fb {
     width: 14px;
     height: 28px;
   }
+
   .footer__logo svg {
     padding-top: 5px;
   }

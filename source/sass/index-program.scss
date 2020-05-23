@@ -4,18 +4,19 @@
   width: 280px;
 }
 
-.program__item{
+.program__item {
   position: relative;
   min-height: 242px;
   background-color: $program-color;
   margin-bottom: 20px;
   padding-top: 24px;
+
   &:last-child {
     margin-bottom: 17px;
   }
 }
 
-.program__logo{
+.program__logo {
   display: inline-block;
   width: 50px;
   height: 51px;
@@ -24,19 +25,21 @@
   margin-left: 22px;
   margin-right: 15px;
   vertical-align: middle;
-  .program__cat {
-    position: absolute;
-    top: 22px;
-    left: 30px;
-  }
-  .program__leo {
-    position: absolute;
-    left: 13px;
-    top: 35px;
-  }
 }
 
-.program__title{
+.program__logo .program__cat {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+}
+
+.program__logo .program__leo {
+  position: absolute;
+  left: 13px;
+  top: 35px;
+}
+
+.program__title {
   display: inline-block;
   vertical-align: middle;
   text-transform: uppercase;
@@ -48,7 +51,7 @@
   line-height: 37px;
 }
 
-.program__text{
+.program__text {
   margin: 22px 0 20px 22px;
   max-width: 235px;
   font-size: 14px;
@@ -67,21 +70,24 @@
   opacity: 0.1;
 }
 
-.program__catalog{
+.program__catalog {
   font-family: $font-head;
   font-size: 16px;
   line-height: 16px;
   color: $top-color;
   text-transform: uppercase;
   margin-left: 22px;
-  svg {
-    margin-left: 6px;
-  }
 }
 
-@media (min-width:$tablet-width) {
+.program__catalog svg {
+  margin-left: 6px;
+}
+
+@media (min-width: $tablet-width) {
   .program {
-    @include containerTablet;
+    margin: 0 auto;
+    padding: 0 30px;
+    min-width: 708px;
   }
 
   .program__item {
@@ -89,10 +95,10 @@
     min-height: 372px;
     margin-bottom: 30px;
     padding: 0;
-    &:nth-child(2)
-    .program__text {
-      max-width: 340px;
-    }
+  }
+
+  .program__item:nth-child(2) .program__text {
+    max-width: 340px;
   }
 
   .program__logo {
@@ -102,20 +108,22 @@
     height: 200px;
     left: 446px;
     top: 92px;
-    .program__cat {
-      position: absolute;
-      width: 141px;
-      height: 194px;
-      top: -12px;
-      left: 30px;
-    }
-    .program__leo {
-      position: absolute;
-      width: 268px;
-      height: 113px;
-      left: -35px;
-      top: 42px;
-    }
+  }
+
+  .program__logo .program__cat {
+    position: absolute;
+    width: 141px;
+    height: 194px;
+    top: -12px;
+    left: 30px;
+  }
+
+  .program__logo .program__leo {
+    position: absolute;
+    width: 268px;
+    height: 113px;
+    left: -35px;
+    top: 42px;
   }
 
   .program__title {
@@ -123,7 +131,6 @@
     line-height: 37px;
     margin-top: 76px;
     margin-left: 53px;
-
   }
 
   .program__text {
@@ -143,31 +150,36 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: 53px;
-    svg {
-      margin-left: 18px;
-      padding-bottom: 3px;
-    }
   }
 
+  .program__catalog svg {
+    margin-left: 18px;
+    padding-bottom: 3px;
+  }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .program {
-    @include containerDesktop;
+    margin: 0 auto;
+    padding: 0 40px;
+    min-width: 1220px;
     display: flex;
     justify-content: space-between;
   }
+
   .program__item {
     min-width: 570px;
     min-height: 372px;
-    &:nth-child(2)
-    .program__text {
-      max-width: 445px;
-    }
   }
+
+  .program__item:nth-child(2) .program__text {
+    max-width: 445px;
+  }
+
   .program__item:last-child {
     margin-bottom: 30px;
   }
+
   .program__logo {
     position: relative;
     width: 100px;
@@ -176,26 +188,29 @@
     top: 0;
     margin-top: 47px;
     margin-left: 52px;
-    .program__cat {
-      position: absolute;
-      width: 71px;
-      height: 97px;
-      top: -5px;
-      left: 14px;
-    }
-    .program__leo {
-      position: absolute;
-      width: 134px;
-      height: 57px;
-      left: -17px;
-      top: 21px;
-    }
+  }
+
+  .program__logo .program__cat {
+    position: absolute;
+    width: 71px;
+    height: 97px;
+    top: -5px;
+    left: 14px;
+  }
+
+  .program__logo .program__leo {
+    position: absolute;
+    width: 134px;
+    height: 57px;
+    left: -17px;
+    top: 21px;
   }
 
   .program__title {
     margin-top: 42px;
     margin-left: 58px;
   }
+
   .program__text {
     max-width: 462px;
     margin-top: 41px;
