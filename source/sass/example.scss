@@ -186,12 +186,21 @@
     border-radius: 3px;
   }
   .example__item-text {
+    box-sizing: content-box;
     font-size: 14px;
     line-height: 14px;
-    max-width: 280px;
-    padding: 0 8px;
+    min-width: 118px;
+    padding: 0;
     top: 62px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: $text-head;
+  }
+
+  .example__item-text--width {
+    min-width: 128px;
+    padding: 0 8px;
+
   }
   .example__costs {
 
@@ -222,23 +231,20 @@
     display: flex;
     justify-content: space-between;
     width: 569px;
-    position: relative;
     padding-top: 369px;
     font-size: 20px;
+  }
+
+  .example__beforeAfter p {
+    position: relative;
+
     &::before {
       position: absolute;
       content: '';
       width: 45px;
       border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-      top: 394px;
-    }
-    &::after {
-      position: absolute;
-      content: '';
-      width: 49px;
-      border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-      top: 394px;
-      left: 520px;
+      top: 25px;
+      left: 2px;
     }
   }
 
