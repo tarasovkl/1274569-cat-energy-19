@@ -24,36 +24,36 @@
 }
 
 .about__item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 26px;
   align-items: center;
-}
-.about__icon{
-  width: 60px;
-  height: 60px;
-  background-color: $leaf-color;
-  &--image1 {
-    background-image: url('..//img/advantage-leaf@1x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &--image2 {
-    background-image: url('..//img/advantage-powder@1x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &--image3 {
-    background-image: url('..//img/advantage-dining@1x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &--image4 {
-    background-image: url('..//img/advantage-clock@1x.png');
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $leaf-color;
+    top: 0;
+    left: 0;
+    background-image: url("../img/advantage-leaf@1x.png");
     background-position: center;
     background-repeat: no-repeat;
   }
 }
+
+.about__item--bg2::after {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.about__item--bg3::after {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.about__item--bg4::after {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
 .about__text {
   font-family: $font-main;
   font-size: 14px;
@@ -61,86 +61,120 @@
   color: $text-color;
   max-width: 201px;
   margin: 0;
+  margin-left: 80px;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .about__item::after {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 50px auto;
+  }
+
+  .about__item--bg2::after {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
+
+  .about__item--bg3::after {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
+
+  .about__item--bg4::after {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
-.about {
-  @include containerTablet;
-  margin-top: 45px;
+  .about {
+    margin: 0 auto;
+    padding: 0 30px;
+    min-width: 708px;
+    margin-top: 45px;
   }
 
-.about__title {
-  font-size: 60px;
-  line-height: 60px;
+  .about__title {
+    font-size: 60px;
+    line-height: 60px;
   }
 
-.about__items {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 72px;
+  .about__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 72px;
   }
 
-.about__item {
-  position: relative;
-  flex-basis: 325px;
-  display: block;
-  min-height: 228px;
-  margin-bottom: 89px;
-  &::before {
+  .about__item {
+    position: relative;
+    flex-basis: 325px;
     display: block;
-    content: '1';
-    font-family: $font-head;
-    font-size: 281px;
-    line-height: 281px;
-    position: absolute;
-    left: 119px;
-    top: -39px;
-    color: $program-color;
-    z-index: -1;
-  }
-  }
+    min-height: 228px;
+    margin-bottom: 89px;
 
-.about__icon {
-  width: 80px;
-  height: 80px;
-  }
-
-.about__text {
-  margin-top: 32px;
-  font-size: 16px;
-  line-height: 24px;
-  max-width: 245px;
-  }
-
-.about__text span {
-  display: table;
-}
-
-.about__item--bg2 {
-  &::before {
-    content: '2';
-    left: 114px;
+    &::before {
+      display: block;
+      content: "1";
+      font-family: $font-head;
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+      left: 119px;
+      top: -39px;
+      color: $program-color;
+      z-index: -1;
     }
   }
+
+  .about__item::after {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about__text {
+    margin-top: 112px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 246px;
+    margin-left: 0;
+  }
+
+  .about__text span {
+    display: table;
+  }
+
+  .about__item--bg2 {
+    &::before {
+      content: "2";
+      left: 114px;
+    }
+  }
+
   .about__item--bg3 {
     &::before {
-      content: '3';
+      content: "3";
       left: 110px;
-      }
     }
+  }
+
   .about__item--bg4 {
     &::before {
       display: block;
-      content: '4';
+      content: "4";
       left: 114px;
-      }
     }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .about__item::after {
+      background-size: 80px auto;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    @include containerDesktop;
+    margin: 0 auto;
+    padding: 0 40px;
+    min-width: 1220px;
     margin-top: 43px;
   }
 
