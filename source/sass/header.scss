@@ -4,13 +4,9 @@
 }
 
 .header__logo {
-  max-width: 200px;
+  max-width: 191px;
   display: block;
   width: 100%;
-}
-
-.header__logo img {
-  width: 191px;
 }
 
 .header__container {
@@ -45,7 +41,8 @@
 }
 
 .header__block {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 3px;
   background: $top-color2;
@@ -122,8 +119,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header__logo img {
-    width: 174px;
+  .header__logo {
+    max-width: 174px;
   }
 
   .header__container {
@@ -216,10 +213,8 @@
     padding-top: 30px;
   }
 
-  .header__container img {
-    width: 230px;
-    height: 60px;
-    margin-left: -13px;
+  .header__logo {
+    max-width: 203px;
   }
 
   .header__nav {

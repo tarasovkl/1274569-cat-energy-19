@@ -111,7 +111,10 @@
     top: 95px;
     background-color: $text-head;
     padding-left: 76px;
-    padding-right: 90px;
+  }
+
+  .map__head--bg::before {
+    display: none;
   }
 
   .map__adress {
