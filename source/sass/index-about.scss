@@ -64,6 +64,7 @@
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .about__item::after {
     background-image: url('../img/advantage-leaf@2x.png');
+    background-size: 50px auto;
   }
   .about__item--bg2::after {
     background-image: url('../img/advantage-powder@2x.png');
@@ -147,6 +148,14 @@
       left: 114px;
       }
     }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .about__item::after {
+       background-size: 80px auto;
+    }
+  }
+
+
 }
 @media (min-width: $desktop-width) {
   .about {

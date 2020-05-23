@@ -117,6 +117,7 @@
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .additional__gift {
     background: url('../img/gift-photo-mobile@2x.jpg') center no-repeat;
+    background-size: 280px auto;
   }
 }
 @media (min-width:$tablet-width) {
@@ -214,6 +215,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .additional__gift {
       background: url('../img/gift-photo-tablet@2x.jpg') center no-repeat;
+      background-size: 708px auto;
     }
   }
 }
@@ -302,6 +304,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .additional__gift {
       background: url('../img/gift-photo-desktop@2x.jpg') center no-repeat;
+      background-size: 245px auto;
     }
   }
 }
