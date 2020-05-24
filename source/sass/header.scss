@@ -100,7 +100,7 @@
   margin: 0;
   font-size: 20px;
   line-height: 20px;
-  font-family: $font-head;
+  font-family: "Oswald-Medium";
   text-transform: uppercase;
 }
 
@@ -163,6 +163,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: $font-head;
   }
 
   .header__nav-item {
