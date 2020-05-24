@@ -19,6 +19,16 @@
   padding-bottom: 51px;
 }
 
+.footer__logo svg {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer__socials {
   position: relative;
   height: 19px;
@@ -54,6 +64,15 @@
 
 .footer__socials svg {
   fill: $footer-svg-color;
+
+  &:hover {
+    fill: $leaf-color;
+  }
+
+  &:active {
+    fill: $leaf-color;
+    opacity: 0.3;
+  }
 }
 
 .footer__socials a {
@@ -68,6 +87,15 @@
 
 .footer__wrapper svg {
   fill: $footer-svg-color;
+
+  &:hover {
+    fill: $leaf-color;
+  }
+
+  &:active {
+    fill: $leaf-color;
+    opacity: 0.3;
+  }
 }
 
 .footer__academy {
@@ -79,6 +107,10 @@
   line-height: 16px;
   color: $text-color;
   font-family: $font-main;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__academy svg {

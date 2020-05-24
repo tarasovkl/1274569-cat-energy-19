@@ -12,6 +12,7 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
+  <div class="overflow-wrap">
   <header class="header">
     <div class="header__container">
       <a href="index.html" class="header__logo">
@@ -22,9 +23,9 @@
         </picture>
       </a>
       <button class="header__button">
-        <span class="header__block"></span>
+        <span class="header__block"></span><!-- header__block--active меняет изображение кнопки -->
       </button>
-      <nav class="header__nav">
+      <nav class="header__nav header__nav--active"><!-- header__nav--active показывает блок навигации -->
         <ul class="header__nav-list">
           <li class="header__nav-item header__nav-item--black"><a href="index.html">Главная</a></li>
           <li class="header__nav-item header__nav-item--black header__nav-item--active2"><a href="#">Каталог
@@ -70,7 +71,7 @@
               </div>
             </div>
           </div>
-          <a class="catalog__order" href="#">Заказать</a>
+          <a class="catalog__order button-style" href="#">Заказать</a>
         </li>
         <li class="catalog__list-item">
           <div class="catalog__list-wrapper">
@@ -102,7 +103,7 @@
               </div>
             </div>
           </div>
-          <a class="catalog__order" href="#">Заказать</a>
+          <a class="catalog__order button-style" href="#">Заказать</a>
         </li>
         <li class="catalog__list-item">
           <div class="catalog__list-wrapper">
@@ -134,7 +135,7 @@
               </div>
             </div>
           </div>
-          <a class="catalog__order" href="#">Заказать</a>
+          <a class="catalog__order button-style" href="#">Заказать</a>
         </li>
         <li class="catalog__list-item">
           <div class="catalog__list-wrapper">
@@ -166,7 +167,7 @@
               </div>
             </div>
           </div>
-          <a class="catalog__order" href="#">Заказать</a>
+          <a class="catalog__order button-style" href="#">Заказать</a>
         </li>
         <li class="catalog__list-item">
           <div class="catalog__list-wrapper">
@@ -199,7 +200,7 @@
               </div>
             </div>
           </div>
-          <a class="catalog__order" href="#">Заказать</a>
+          <a class="catalog__order button-style" href="#">Заказать</a>
         </li>
         <li class="catalog__list-item">
           <div class="catalog__list-wrapper">
@@ -232,7 +233,7 @@
               </div>
             </div>
           </div>
-          <a class="catalog__order" href="#">Заказать</a>
+          <a class="catalog__order button-style" href="#">Заказать</a>
         </li>
         <li class="catalog__list-item">
           <div class="catalog__list-wrapper">
@@ -264,7 +265,7 @@
               </div>
             </div>
           </div>
-          <a class="catalog__order" href="#">Заказать</a>
+          <a class="catalog__order button-style" href="#">Заказать</a>
         </li>
         <li class="catalog__list-item">
           <svg class="catalog__list-plus" width="31" height="31">
@@ -292,7 +293,7 @@
                   <p>200 Р.</p>
                 </div>
               </div>
-              <a href="#" class="additional__item-order">Заказать</a>
+              <a href="#" class="additional__item-order button-style">Заказать</a>
             </li>
             <li class="additional__item">
               <div class="wrap">
@@ -302,7 +303,7 @@
                   <p>50 Р.</p>
                 </div>
               </div>
-              <a href="#" class="additional__item-order">Заказать</a>
+              <a href="#" class="additional__item-order button-style">Заказать</a>
             </li>
             <li class="additional__item">
               <div class="wrap">
@@ -312,7 +313,7 @@
                   <p>100 Р.</p>
                 </div>
               </div>
-              <a href="#" class="additional__item-order">Заказать</a>
+              <a href="#" class="additional__item-order button-style">Заказать</a>
             </li>
             <li class="additional__item">
               <div class="wrap">
@@ -322,7 +323,7 @@
                   <p>300 Р.</p>
                 </div>
               </div>
-              <a href="#" class="additional__item-order">Заказать</a>
+              <a href="#" class="additional__item-order button-style">Заказать</a>
             </li>
           </ul>
           <div class="additional__gift">
@@ -390,6 +391,7 @@
       </div>
     </div>
   </footer>
+</div>
   <script src="js/picturefill.min.js"></script>
 </body>
 

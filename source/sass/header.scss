@@ -7,6 +7,14 @@
   max-width: 191px;
   display: block;
   width: 100%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__container {
@@ -21,7 +29,7 @@
 }
 
 .header__nav {
-  /*display: none;*/
+  display: none;
   min-height: 195px;
   flex-grow: 1;
   margin-top: 14px;
@@ -50,7 +58,7 @@
   border-radius: 30%;
 }
 
-.header__block--close {
+.header__block--active {
   display: block;
   position: relative;
   width: 19px;
@@ -103,6 +111,14 @@
   text-align: center;
   padding-top: 24px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -136,6 +152,7 @@
   }
 
   .header__nav {
+    display: block;
     min-height: 18px;
     flex-grow: 0;
     margin-top: 0;
@@ -218,6 +235,7 @@
   }
 
   .header__nav {
+    display: block;
     width: 479px;
   }
 

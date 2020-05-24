@@ -264,6 +264,18 @@
     }
   }
 
+  .example__beforeAfter p:hover {
+    &::before {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .example__beforeAfter p:active {
+    &::before {
+      border-bottom: none;
+    }
+  }
+
   .example__img-before {
     position: absolute;
     left: -34px;
@@ -298,6 +310,15 @@
     border: solid 1px #cdcdcd;
     border-radius: 50%;
     background: #ffffff;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: solid 2px $leaf-color;
+    }
 
     &::after {
       content: "";

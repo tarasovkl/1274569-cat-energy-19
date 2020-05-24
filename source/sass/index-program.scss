@@ -77,10 +77,28 @@
   color: $top-color;
   text-transform: uppercase;
   margin-left: 22px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .program__catalog svg {
   margin-left: 6px;
+
+  &:nth-child(2) {
+    display: none;
+  }
+}
+
+.program__catalog:hover svg {
+  &:nth-child(1) {
+    display: none;
+  }
+
+  &:nth-child(2) {
+    display: inline-block;
+  }
 }
 
 @media (min-width: $tablet-width) {

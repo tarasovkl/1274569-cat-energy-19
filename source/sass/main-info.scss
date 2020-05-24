@@ -63,6 +63,16 @@
   margin-top: 301px;
 }
 
+.button-style {
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-info {
     background: url("../img/index-background-mobile@2x.jpg") top center no-repeat;

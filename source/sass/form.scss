@@ -54,7 +54,6 @@
   color: $top-color2;
 }
 
-
 .form__inputText {
   flex-grow: 1;
   margin-left: 17px;
@@ -70,6 +69,26 @@
   &::placeholder {
     opacity: 1;
   }
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &:focus:invalid {
+    border: 2px solid #ff8282;
+  }
+}
+
+.form__inputText:active + svg {
+  fill: $leaf-color;
+}
+
+.form__inputText:focus:invalid + svg {
+  fill: #ff8282;
 }
 
 .form__inputText--margin {
@@ -180,6 +199,21 @@
   }
 }
 
+.form__radio label:hover {
+  &::before {
+    border: 1px solid #bababa;
+  }
+}
+
+.form__radio label:active {
+  color: rgba(34, 34, 34, 0.3);
+
+  &::before {
+    border: 1px solid #bababa;
+    opacity: 0.3;
+  }
+}
+
 .form__radio-item input:checked + label::after {
   position: absolute;
   content: "";
@@ -189,6 +223,10 @@
   border-radius: 50%;
   left: 8px;
   top: 6px;
+}
+
+.form__radio-item input:checked:active + label::after {
+  opacity: 0.3;
 }
 
 .form__checkbox label,
@@ -215,6 +253,21 @@
   }
 }
 
+.form__checkbox label:hover {
+  &::before {
+    border: 1px solid #bababa;
+  }
+}
+
+.form__checkbox label:active {
+  opacity: 0.3;
+
+  &::before {
+    border: 1px solid #bababa;
+    opacity: 0.3;
+  }
+}
+
 .form__checkbox-icon {
   position: absolute;
   left: 5px;
@@ -225,6 +278,10 @@
 
 .form__checkbox-item input:checked + svg {
   display: block;
+}
+
+.form__checkbox-item input:checked:active + svg {
+  opacity: 0.3;
 }
 
 .form__submit {
