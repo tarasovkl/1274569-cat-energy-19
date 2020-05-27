@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body>
@@ -25,7 +27,8 @@
         <button class="header__button">
           <span class="header__block"></span><!-- header__block--active меняет изображение кнопки -->
         </button>
-        <nav class="header__nav header__nav--active"><!-- header__nav--active показывает блок навигации -->
+        <nav class="header__nav header__nav--active">
+          <!-- header__nav--active показывает блок навигации -->
           <ul class="header__nav-list">
             <li class="header__nav-item header__nav-item--active1"><a href="#">Главная</a></li>
             <li class="header__nav-item"><a href="catalog.html">Каталог продукции</a></li>
@@ -55,7 +58,6 @@
           <h3 class="program__title">Похудение</h3>
           <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <span class="program__line"></span>
           <a href="#" class="program__catalog">Каталог Slim
             <svg width="25" height="12">
               <use xlink:href="#icon-right-arrow-long"></use>
@@ -74,7 +76,6 @@
           <h3 class="program__title">Набор массы</h3>
           <p class="program__text">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <span class="program__line"></span>
           <a href="#" class="program__catalog">Каталог pro
             <svg width="25" height="12">
               <use xlink:href="#icon-right-arrow-long"></use>
@@ -127,12 +128,18 @@
           <div class="example__before">
             <div class="example__images">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="example__img-before" src="img/before-mobile@1x.png"
                   srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" alt="Изображение кота до">
               </picture>
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                 <img class="example__img-after" src="img/after-mobile@1x.png"
@@ -174,20 +181,20 @@
         </div>
         <ul class="footer__socials">
           <li>
-            <a href="#">
+            <a href="#" aria-label="Вконтакте">
               <svg class="footer__socials-vk" width="22" height="12">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li><a href="#">
+          <li><a href="#" aria-label="Инстаграм">
               <svg class="footer__socials-inst" width="17" height="17">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" aria-label="Фэйсбук">
               <svg class="footer__socials-fb" width="10" height="19px">
                 <use xlink:href="#icon-fb"></use>
               </svg>

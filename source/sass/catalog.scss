@@ -247,13 +247,13 @@
   .catalog__list-item-wrapper {
     max-width: 249px;
     margin: 0 auto;
-    max-height: 80px;
     padding: 0;
     margin-top: 28px;
   }
 
   .catalog__list-item-name li {
     position: relative;
+    margin-bottom: 15px;
 
     &::before {
       position: absolute;
@@ -262,10 +262,6 @@
       height: 1px;
       background-color: rgba(205, 205, 205, 0.8);
       top: 22px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 15px;
     }
   }
 
@@ -281,7 +277,7 @@
     text-align: right;
   }
 
-  .catalog__list-item-value li:not(:last-child) {
+  .catalog__list-item-value li {
     margin-bottom: 15px;
   }
 
@@ -303,7 +299,8 @@
   .catalog__order {
     width: 229px;
     margin: 0 auto;
-    margin-top: 42px;
+    margin-top: 27px;
+    margin-bottom: 40px;
   }
 
   .catalog__list-plus {

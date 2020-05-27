@@ -52,22 +52,25 @@
 }
 
 .program__text {
-  margin: 22px 0 20px 22px;
+  position: relative;
+  margin: 22px 0 40px 22px;
   max-width: 235px;
   font-size: 14px;
   line-height: 18px;
   color: $text-color;
   font-family: $font-main;
-}
 
-.program__line {
-  display: block;
-  margin-left: 22px;
-  margin-bottom: 20px;
-  width: 240px;
-  height: 1px;
-  background-color: #000000;
-  opacity: 0.1;
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.1;
+    top: 110px;
+    left: 0;
+  }
 }
 
 .program__catalog {
@@ -158,10 +161,10 @@
     margin-left: 52px;
     margin-bottom: 55px;
     max-width: 373px;
-  }
 
-  .program__line {
-    display: none;
+    &::before {
+      display: none;
+    }
   }
 
   .program__catalog {

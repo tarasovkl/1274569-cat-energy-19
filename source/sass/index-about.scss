@@ -180,9 +180,15 @@
 
   .about__items {
     margin-top: 72px;
+    justify-content: space-evenly;
   }
 
   .about__item {
-    flex-basis: 247px;
+    flex-basis: 245px;
+    margin-right: 80px;
+
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
   }
 }
